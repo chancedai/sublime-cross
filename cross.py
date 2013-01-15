@@ -2,6 +2,8 @@
 	OPTIONS
 	"show_cross": true
 		show cross.
+	"show_multiple_cross":true
+		show multiple cross
 
 """
 import sublime
@@ -18,11 +20,6 @@ def unload_handler():
 			view.erase_regions('CrossListener')
 class CrossListener(sublime_plugin.EventListener):
 	def __init__(self):
-		print '---------------------------------- cross init begin'
-		# settings_cross.add_on_change('reload', lambda: self.update_cross(sublime.active_window().active_view()))
-		print sublime.active_window()
-		# self.update_cross(sublime.active_window().active_view())
-		print '---------------------------------- cross init end'
 	def update_cross(self, view):
 		print 666
 		settings_index = view.settings()
