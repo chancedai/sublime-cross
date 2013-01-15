@@ -1,0 +1,18 @@
+[
+    {
+        "caption": "Preferences: Cross Key Bindings – Default",
+        "command": "open_file",
+        "args": {
+            "file": "${packages}/Cross/Default (Windows).sublime-keymap",
+            "platform": "Windows"
+        }
+    },
+    {
+        "caption": "Preferences: Cross Key Bindings – User",
+        "command": "open_file",
+        "args": {
+            "file": "${packages}/User/Default (Windows).sublime-keymap",
+            "platform": "Windows"
+        }
+    }
+]
