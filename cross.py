@@ -20,8 +20,8 @@ def unload_handler():
 			view.erase_regions('CrossListener')
 class CrossListener(sublime_plugin.EventListener):
 	def __init__(self):
+		print '---------------------------------- cross init'
 	def update_cross(self, view):
-		print 666
 		settings_index = view.settings()
 		show_cross = int(bool(settings_cross.get('show_cross')))
 		show_multiple_cross = int(bool(settings_cross.get('show_multiple_cross')))
