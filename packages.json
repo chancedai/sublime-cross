@@ -8,7 +8,7 @@
             "homepage": "https://github.com/chancedai/sublime-cross",
             "last_modified": "2013-01-18 13:22",
             "platforms": {
-                *: [
+                "*": [
                     {
                         "version": "1.0.0",
                         "url": "https://nodeload.github.com/chancedai/sublime-cross/zip/v1.0.0"
