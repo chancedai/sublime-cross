@@ -23,6 +23,10 @@ class CrossListener(sublime_plugin.EventListener):
 		print '---------------------------------- cross init'
 	def update_cross(self, view):
 		settings_index = view.settings()
+		viewport = view.viewport_extent()
+		if viewport[1]<30:
+			settings_index.set('rulers','')
+			return
 		show_cross = int(bool(settings_cross.get('show_cross')))
 		show_multiple_cross = int(bool(settings_cross.get('show_multiple_cross')))
 		if not show_cross:
@@ -33,7 +37,7 @@ class CrossListener(sublime_plugin.EventListener):
 			end_sel = sel.end()
 			pos_xy = view.text_to_layout(end_sel)
 			pos_x = pos_xy[0]
-			pos = pos_x/view.em_width()
+			pos = int(pos_x/view.em_width())
 			rulers.append(pos)
 			if not show_multiple_cross:
 				break
