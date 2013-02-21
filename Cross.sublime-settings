@@ -1,4 +1,5 @@
 {
 	"show_cross" : true,
-	"show_multiple_cross":true
+	"show_multiple_cross":true,
+	"cross_width":4
 }
