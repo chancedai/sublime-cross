@@ -1,8 +1,11 @@
 sublime-cross
 =============
 
-Create a cursor-centered cross
+![Screenshot](http://ww1.sinaimg.cn/mw690/6c9ab962jw1e21imltvh1j.jpg)
 
+![Screenshot](http://ww2.sinaimg.cn/mw690/6c9ab962jw1e0upwb1k5bj.jpg)
+
+Create a cursor-centered cross
 
 ## Installation
 
@@ -16,7 +19,7 @@ Create a cursor-centered cross
 
 ## Configuration ##
 
-These are the settings that I prefer.You can change the value of the options like so:
+These are the settings that I prefer.You can change the value of the options in Cross.sublime-settings like so:
 
 ```json
 {
