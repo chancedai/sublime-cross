@@ -21,7 +21,7 @@ def unload_handler():
 			view.erase_regions('CrossListener')
 class CrossListener(sublime_plugin.EventListener):
 	def __init__(self):
-		print '---------------------------------- 20130222 cross init'
+		print ('sublime-cross init')
 	def update_cross(self, view):
 		settings_index = view.settings()
 		viewport = view.viewport_extent()
@@ -37,8 +37,6 @@ class CrossListener(sublime_plugin.EventListener):
 		rulers = []
 		gap = 0.5/view.em_width()
 		start = -math.ceil(cross_width)*gap
-
-
 		for sel in reversed(view.sel()):
 			end_sel = sel.end()
 			pos_xy = view.text_to_layout(end_sel)
