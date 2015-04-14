@@ -1,5 +1,5 @@
 {
-    "schema_version": "1.3",
+    "schema_version": "2.0",
     "packages": [
         {
             "name": "Cross",
@@ -10,7 +10,7 @@
             "platforms": {
                 "*": [
                     {
-                        "version": "1.3",
+                        "version": "2.0",
                         "url": "https://nodeload.github.com/chancedai/sublime-cross/zip/master"
                     }
                 ]
