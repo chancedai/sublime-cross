@@ -28,9 +28,21 @@ class CrossListener(sublime_plugin.EventListener):
 		if viewport[1]<30:
 			settings_index.set('rulers','')
 			return
-		show_cross = int(bool(settings_cross.get('show_cross')))
 		show_multiple_cross = int(bool(settings_cross.get('show_multiple_cross')))
-		cross_width = int(settings_cross.get('cross_width'))
+
+		cross_width = settings_cross.get('cross_width')
+		show_cross = settings_cross.get('show_cross')
+
+		if cross_width:
+			cross_width = int(cross_width)
+		else:
+			cross_width = 1
+
+		if show_cross:
+			show_cross = int(bool(show_cross))
+		else:
+			show_cross = True
+
 		if not show_cross:
 			settings_index.set('rulers',[])
 			return
